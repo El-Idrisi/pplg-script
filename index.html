@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPLG Script</title>
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body id="home" class="font-inter text-slate-100 bg-[#130f32]">
+    <!-- Navbar -->
+
+    <header
+      class="fixed w-full flex justify-around items-center px-8 py-5 bg-slate-900 text-slate-100 z-[99999]"
+    >
+      <div class="">
+        <h2 class="font-bold text-2xl font-courgette">
+          PPLG <span class="text-violet-500">Script</span>
+        </h2>
+      </div>
+
+      <div class="hidden lg:flex items-center justify-center text-slate-100">
+        <ul class="flex text-lg">
+          <li class="px-4 group">
+            <a href="#home" class="menu-navbar">
+              Home
+              <hr class="navbar-underline-menu" />
+            </a>
+          </li>
+          <li class="px-4 group">
+            <a href="#about" class="menu-navbar">
+              About
+              <hr class="navbar-underline-menu" />
+            </a>
+          </li>
+          <li class="px-4 group">
+            <a href="#project" class="menu-navbar">
+              Project
+              <hr class="navbar-underline-menu" />
+            </a>
+          </li>
+          <li class="px-4 group">
+            <a href="#gallery" class="menu-navbar">
+              Gallery
+              <hr class="navbar-underline-menu" />
+            </a>
+          </li>
+          <li class="px-4 group">
+            <a href="#contact" class="menu-navbar">
+              Contact
+              <hr class="navbar-underline-menu" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center px-4">
+        <button class="block absolute right-4 lg:hidden" id="hambuger">
+          <span class="hambuger-line origin-top-left"></span>
+          <span class="hambuger-line"></span>
+          <span class="hambuger-line origin-bottom-left"></span>
+        </button>
+      </div>
+      <nav
+        id="nav-bar"
+        class="absolute right-0 top-[4.5rem] bg-slate-900 text-slate-100 px-10 py-4 translate-x-full transition-all duration-300"
+      >
+        <div class="flex flex-col gap-4">
+          <a href="#home" class="menu-sidebar group">
+            Home
+            <hr class="navbar-underline-menu" />
+          </a>
+          <a href="#about" class="menu-sidebar group">
+            About
+            <hr class="navbar-underline-menu" />
+          </a>
+          <a href="#project" class="menu-sidebar group">
+            Project
+            <hr class="navbar-underline-menu" />
+          </a>
+          <a href="#gallery" class="menu-sidebar group">
+            Gallery
+            <hr class="navbar-underline-menu" />
+          </a>
+          <a href="#contact" class="menu-sidebar group">
+            Contact
+            <hr class="navbar-underline-menu" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Navbar -->
+
+    <!-- Hero Section -->
+
+    <div
+      class="flex relative justify-center items-center h-screen bg-gradient-to-t from-[#a7ccdd] to-[#3434c6]"
+    >
+      <img
+        src="img/hero/bintang.png"
+        alt="bintang"
+        id="bintang"
+        class="absolute top-[4.2rem] w-full"
+      />
+      <img
+        src="img/hero/gunung.png"
+        alt="gunung"
+        id="gunung"
+        class="absolute bottom-0 w-full"
+      />
+      <img
+        src="img/hero/pohon-4.png"
+        alt="pohon-4"
+        id="pohon-4"
+        class="absolute bottom-0 w-full"
+      />
+      <img
+        src="img/hero/pohon-3.png"
+        alt="pohon-3"
+        id="pohon-3"
+        class="absolute bottom-0 w-full"
+      />
+      <img
+        src="img/hero/tanah-2.png"
+        alt="tanah-2"
+        id="tanah-2"
+        class="absolute bottom-0 w-full"
+      />
+      <img
+        src="img/hero/tanah-1.png"
+        alt="tanah-1"
+        id="tanah-1"
+        class="absolute bottom-0 w-full"
+      />
+      <h1
+        id="judul"
+        class="text-4xl font-bold text-center absolute text-slate-100 md:text-6xl"
+      >
+        Welcome To <span class="font-courgette">PPLG Script</span>
+      </h1>
+      <img
+        src="img/hero/pohon-2.png"
+        alt="pohon-2"
+        id="pohon-2"
+        class="absolute bottom-0 w-full"
+      />
+      <img
+        src="img/hero/pohon-1.png"
+        alt="pohon-1"
+        id="pohon-1"
+        class="absolute bottom-0 w-full"
+      />
+    </div>
+
+    <!-- Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="bg-[#130f32] relative z-10 px-4 pt-36">
+      <div class="w-full flex flex-col justify-center items-center group gap-2">
+        <h2 class="judul-section">Tentang Kami</h2>
+        <hr class="underline-judul group-hover:w-48" />
+      </div>
+
+      <div class="w-full px-4">
+        <div class="flex flex-wrap justify-center items-center mt-8">
+          <div class="w-full px-4 lg:w-1/2 lg:order-2">
+            <img
+              id="about-img"
+              src="img/gallery/foto-3.jpeg"
+              alt="foto-bersama"
+              class="w-full rounded-lg border-4 border-violet-950"
+            />
+          </div>
+          <div class="w-full mt-6 px-4 lg:w-1/2 lg:order-1">
+            <p class="font-light text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              cumque tempora impedit aperiam, deleniti nostrum perferendis minus
+              molestiae culpa esse consectetur dolorum dicta unde cum
+              laboriosam, odit, non ea eaque. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ducimus ab asperiores quisquam
+              suscipit quae harum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+      <path
+        fill="#1d174b"
+        fill-opacity="1"
+        d="M0,160L24,144C48,128,96,96,144,90.7C192,85,240,107,288,149.3C336,192,384,256,432,250.7C480,245,528,171,576,170.7C624,171,672,245,720,234.7C768,224,816,128,864,112C912,96,960,160,1008,176C1056,192,1104,160,1152,144C1200,128,1248,128,1296,154.7C1344,181,1392,235,1416,261.3L1440,288L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- About Section -->
+
+    <!-- Project Section -->
+
+    <section id="project" class="bg-[#1D174B] px-4 pt-24 pb-16">
+      <div
+        class="w-full px-4 flex flex-col justify-center items-center group gap-2"
+      >
+        <h2 class="judul-section">Projek Kami</h2>
+        <hr class="underline-judul group-hover:w-48" />
+      </div>
+
+      <div class="w-full">
+        <div class="flex flex-wrap justify-center items-center mt-8 gap-4">
+          <div
+            class="bg-card w-full rounded-lg overflow-hidden shadow-lg md:w-1/3 lg:w-1/4"
+          >
+            <img
+              class="w-full rounded-t-lg"
+              src="img/project/thumbnail.webp"
+              alt="ESCAPE - Short Film"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                <a href="https://www.youtube.com/watch?v=L7VURDWNHR4"
+                  >ESCAPE - Short Film</a
+                >
+              </div>
+              <p class="text-gray-600 font-light">
+                Deskripsi dari kartu ini akan ditulis di sini. Pastikan
+                deskripsi singkat, padat, dan memberikan informasi yang cukup
+                tentang isi kartu.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=L7VURDWNHR4"
+                class="inline-block mt-4 px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 text-sm font-semibold"
+                target="_blank"
+                ><i data-feather="youtube" class="inline mr-4"></i>Lihat
+                Video</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-card w-full rounded-lg overflow-hidden shadow-lg md:w-1/3 lg:w-1/4"
+          >
+            <img
+              class="w-full rounded-t-lg"
+              src="img/project/thumbnail-2.png"
+              alt="Ramadhan - Short Film"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                <a href="https://youtu.be/ihDvq-tx2VU">Ramadhan - Short Film</a>
+              </div>
+              <p class="text-gray-600 font-light">
+                Deskripsi dari kartu ini akan ditulis di sini. Pastikan
+                deskripsi singkat, padat, dan memberikan informasi yang cukup
+                tentang isi kartu.
+              </p>
+              <a
+                href="https://youtu.be/ihDvq-tx2VU"
+                class="inline-block mt-4 px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 text-sm font-semibold"
+                target="_blank"
+                ><i data-feather="youtube" class="inline mr-4"></i>Lihat
+                Video</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-card w-full rounded-lg overflow-hidden shadow-lg md:w-1/3 lg:w-1/4"
+          >
+            <img
+              class="w-full rounded-t-lg"
+              src="img/project/thumbnail-3.webp"
+              alt="Depa Story - Short Film"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                <a href="https://youtu.be/CCKBHuWhC-I"
+                  >Depa Story - Short Film</a
+                >
+              </div>
+              <p class="text-gray-600 font-light">
+                Deskripsi dari kartu ini akan ditulis di sini. Pastikan
+                deskripsi singkat, padat, dan memberikan informasi yang cukup
+                tentang isi kartu.
+              </p>
+              <a
+                href="https://youtu.be/CCKBHuWhC-I"
+                class="inline-block mt-4 px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 text-sm font-semibold"
+                target="_blank"
+                ><i data-feather="youtube" class="inline mr-4"></i>Lihat
+                Video</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-card w-full rounded-lg overflow-hidden shadow-lg md:w-1/3 lg:w-1/4"
+          >
+            <img
+              class="w-full rounded-t-lg"
+              src="img/project/thumbnail-4png.jpg"
+              alt="LAH NYONTEK - Short Film"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                <a href="https://youtu.be/QIV0Tuof5cU"
+                  >LAH NYONTEK - Short Film</a
+                >
+              </div>
+              <p class="text-gray-600 font-light">
+                Deskripsi dari kartu ini akan ditulis di sini. Pastikan
+                deskripsi singkat, padat, dan memberikan informasi yang cukup
+                tentang isi kartu.
+              </p>
+              <a
+                href="https://youtu.be/QIV0Tuof5cU"
+                class="inline-block mt-4 px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 text-sm font-semibold"
+                target="_blank"
+                ><i data-feather="youtube" class="inline mr-4"></i>Lihat
+                Video</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-card w-full rounded-lg overflow-hidden shadow-lg md:w-1/3 lg:w-1/4"
+          >
+            <img
+              class="w-full rounded-t-lg"
+              src="img/project/thumbnail-5.png"
+              alt="Kafe Sederhana - Web Desain"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                <a href="https://el-idrisi.github.io/kafe-sederhana/"
+                  >Kafe Sederhana - Web Desain</a
+                >
+              </div>
+              <p class="text-gray-600 font-light">
+                Deskripsi dari kartu ini akan ditulis di sini. Pastikan
+                deskripsi singkat, padat, dan memberikan informasi yang cukup
+                tentang isi kartu.
+              </p>
+              <a
+                href="https://el-idrisi.github.io/kafe-sederhana/"
+                class="inline-block mt-4 px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 text-sm font-semibold"
+                target="_blank"
+                ><i data-feather="layout" class="inline mr-4"></i>Lihat
+                Sepenuhnya</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      class="wave-2"
+    >
+      <path
+        fill="#1d174b"
+        fill-opacity="1"
+        d="M0,128L21.8,117.3C43.6,107,87,85,131,85.3C174.5,85,218,107,262,112C305.5,117,349,107,393,106.7C436.4,107,480,117,524,149.3C567.3,181,611,235,655,218.7C698.2,203,742,117,785,101.3C829.1,85,873,139,916,138.7C960,139,1004,85,1047,80C1090.9,75,1135,117,1178,122.7C1221.8,128,1265,96,1309,112C1352.7,128,1396,192,1418,224L1440,256L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- Project Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-[#130f32] px-4 pt-24 pb-16">
+      <div
+        class="w-full px-4 flex flex-col justify-center items-center group gap-2"
+      >
+        <h2 class="judul-section">Galeri</h2>
+        <hr class="underline-judul group-hover:w-48" />
+      </div>
+
+      <div class="w-full px-4 mt-8">
+        <div class="flex flex-wrap justify-center items-center gap-4">
+          <div class="w-full md:w-1/3 lg:w-1/4 data-tilt">
+            <img
+              src="img/gallery/foto-1.jpeg"
+              alt="foto-1"
+              class="w-full rounded-lg p-1 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"
+            />
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 data-tilt">
+            <img
+              src="img/gallery/foto-2.jpeg"
+              alt="foto-2"
+              class="w-full rounded-lg p-1 bg-gradient-to-tl from-indigo-500 via-purple-500 to-pink-500"
+            />
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 data-tilt">
+            <img
+              src="img/gallery/foto-8.jpeg"
+              alt="foto-3"
+              class="w-full rounded-lg p-1 bg-gradient-to-br from-emerald-500 via-teal-500 to-blue-600"
+            />
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 data-tilt">
+            <img
+              src="img/gallery/foto-4.jpeg"
+              alt="foto-4"
+              class="w-full rounded-lg p-1 bg-gradient-to-br from-red-500 via-pink-500 to-violet-500"
+            />
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 data-tilt">
+            <img
+              src="img/gallery/foto-3.jpeg"
+              alt="foto-5"
+              class="w-full rounded-lg p-1 bg-gradient-to-br from-pink-500 via-purple-500 to-rose-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+
+    <!-- Contact Section -->
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      class="wave-3"
+    >
+      <path
+        fill="#1d174b"
+        fill-opacity="1"
+        d="M0,256L21.8,218.7C43.6,181,87,107,131,69.3C174.5,32,218,32,262,69.3C305.5,107,349,181,393,186.7C436.4,192,480,128,524,106.7C567.3,85,611,107,655,128C698.2,149,742,171,785,186.7C829.1,203,873,213,916,197.3C960,181,1004,139,1047,112C1090.9,85,1135,75,1178,106.7C1221.8,139,1265,213,1309,229.3C1352.7,245,1396,203,1418,181.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+      ></path>
+    </svg>
+
+    <section id="contact" class="bg-[#1D174B] px-4 pt-24 pb-12">
+      <div
+        class="w-full px-4 flex flex-col justify-center items-center group gap-2"
+      >
+        <h2 class="judul-section">Kontak Kami</h2>
+        <hr class="underline-judul group-hover:w-48" />
+      </div>
+
+      <div class="w-full lg:p-4 flex flex-wrap justify-center items-center mt-10">
+        <div class="w-full pr-4 lg:w-1/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63834.66377726056!2d101.4291329!3d0.4998588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea0db259745%3A0x7f79d4d18c70c57f!2sSMK%20Negeri%202%20Pekanbaru!5e0!3m2!1sen!2sid!4v1682607259754!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-[25rem] rounded-lg"
+          ></iframe>
+        </div>
+        <div class="w-full lg:px-4 mt-10 lg:w-1/2">
+          <form class="flex flex-col" autocomplete="off">
+            <div
+              class="w-full flex bg-slate-700 px-4 py-2 rounded-full bg-opacity-70 my-4"
+            >
+              <label for="nama" class="flex justify-center items-center">
+                <i data-feather="user" class="text-slate-500"></i>
+              </label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                class="ml-2 w-full bg-transparent outline-0 text-lg"
+                placeholder="Nama"
+                required
+              />
+            </div>
+
+            <div
+              class="w-full flex bg-slate-700 px-4 py-2 rounded-full bg-opacity-70 my-4"
+            >
+              <label for="email" class="flex justify-center items-center">
+                <i data-feather="mail" class="text-slate-500"></i>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="ml-2 w-full bg-transparent outline-0 text-lg active:bg-transparent"
+                placeholder="Email"
+              />
+            </div>
+
+            <div
+              class="w-full flex bg-slate-700 px-4 py-2 rounded-full bg-opacity-70 my-4"
+            >
+              <label for="hp" class="flex justify-center items-center">
+                <i data-feather="phone" class="text-slate-500"></i>
+              </label>
+              <input
+                type="tel"
+                name="hp"
+                id="hp"
+                class="ml-2 w-full bg-transparent outline-0 text-lg"
+                placeholder="No HP"
+              />
+            </div>
+
+            <textarea
+              name="pesan"
+              id="pesan"
+              cols="30"
+              rows="5"
+              class="bg-slate-700 bg-opacity-70 rounded-xl text-lg p-2 outline-0 my-4"
+              placeholder="Masukan Pesan Anda"
+            ></textarea>
+
+            <button
+              id="button"
+              class="bg-violet-500 py-2 rounded-full transition-all duration-150 hover:bg-violet-600"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bg-[#1d174b] wave-4">
+      <path
+        fill="#4c1d95"
+        fill-opacity="1"
+        d="M0,192L21.8,208C43.6,224,87,256,131,240C174.5,224,218,160,262,160C305.5,160,349,224,393,218.7C436.4,213,480,139,524,117.3C567.3,96,611,128,655,165.3C698.2,203,742,245,785,250.7C829.1,256,873,224,916,213.3C960,203,1004,213,1047,213.3C1090.9,213,1135,203,1178,181.3C1221.8,160,1265,128,1309,122.7C1352.7,117,1396,139,1418,149.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- Contact Section -->
+
+    <!-- Footer -->
+    <footer class="bg-violet-900 py-10">
+      <div class="w-full px-4">
+        <div class="flex flex-wrap justify-center items-center gap-4">
+          <a
+            href="#"
+            class="border-2 p-2 rounded-full hover:border-gray-500 group transition-all duration-200"
+            ><i
+              data-feather="youtube"
+              class="group-hover:text-gray-500 transition-all duration-200"
+            ></i
+          ></a>
+
+          <a
+            href="#"
+            class="border-2 p-2 rounded-full hover:border-gray-500 group transition-all duration-200"
+            ><i
+              data-feather="instagram"
+              class="group-hover:text-gray-500 transition-all duration-200"
+            ></i
+          ></a>
+
+          <a
+            href="#"
+            class="border-2 p-2 rounded-full hover:border-gray-500 group transition-all duration-200"
+            ><i
+              data-feather="facebook"
+              class="group-hover:text-gray-500 transition-all duration-200"
+            ></i
+          ></a>
+
+          <a
+            href="#"
+            class="border-2 p-2 rounded-full hover:border-gray-500 group transition-all duration-200"
+            ><i
+              data-feather="twitter"
+              class="group-hover:text-gray-500 transition-all duration-200"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="w-full px-4 mt-4">
+        <div class="flex flex-wrap justify-center items-center gap-6">
+          <a href="#home" class="font-light hover:text-gray-500">Home</a>
+          <a href="#about" class="font-light hover:text-gray-500">About</a>
+          <a href="#project" class="font-light hover:text-gray-500">Project</a>
+          <a href="#gallery" class="font-light hover:text-gray-500">Gallery</a>
+          <a href="#contact" class="font-light hover:text-gray-500">Contact</a>
+        </div>
+      </div>
+      <div class="w-full px-4 mt-4">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <hr class="w-[26rem]" />
+          <p class="font-light text-sm">Created by PPLG Script | &copy; 2023</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

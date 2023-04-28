@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-courgette {
+  font-family: "Courgette", cursive;
+}
+
+.hambuger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-white rounded-full transition duration-300;
+}
+
+.hambuger-active > span:nth-child(1) {
+  @apply transform rotate-[45deg];
+}
+
+.hambuger-active > span:nth-child(2) {
+  @apply transform scale-0;
+}
+
+.hambuger-active > span:nth-child(3) {
+  @apply transform -rotate-[43deg];
+}
+
+.menu-navbar {
+  @apply flex flex-col justify-center items-center transition-all duration-150 group-hover:text-violet-500;
+}
+
+.navbar-underline-menu {
+  @apply w-0 border-transparent transition-all duration-300 group-hover:w-full group-hover:border-violet-500;
+}
+
+.menu-sidebar {
+  @apply flex flex-col justify-center items-center transition-all duration-150 hover:text-violet-500;
+}
+
+.judul-section {
+  @apply text-2xl font-bold md:text-3xl;
+}
+
+.underline-judul {
+  @apply w-0 transition-all duration-300;
+}
+
+.bg-card {
+  background-color: #18143f;
+}
+
+.animate-show {
+  animation: show 1s ease alternate;
+  animation-fill-mode: forwards;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background-color: #130f32;
+  /* border: 1px solid #1e1753; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #522499;
+  border-radius: 9999px;
+  transition: all;
+  transition-duration: 3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #431c7e;
+}
+
+@keyframes show {
+  from {
+    filter: blur(50px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
